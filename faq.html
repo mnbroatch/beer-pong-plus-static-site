@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html style="background:#0060bd;">
+  <head>
+    <title>Beer Pong Plus</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+  </head>
+  <body>
+
+    <div id="fb-root"></div>
+
+    <div class="header">
+
+    </div>
+
+    <div class="sidebar">
+
+      <a href="index.html">
+        <img src="headerlogo.gif" class="bpp-logo">
+      </a>
+
+      <div class="sidebar__option">
+        <a href="theapp.html">The App</a>
+      </div>
+
+      <div class="sidebar__option">
+        <a href="http://reddit.com/r/beerpongplus">The Forum</a>
+      </div>
+
+      <div class="sidebar__option">
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div style="border:0;" class="sidebar__option">
+        <a href="contact.html">Contact</a>
+      </div>
+
+        <!--twitter button--> 
+        <div class="twitter-box">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-related="BeerPongPlus" data-count="none" data-dnt="true">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      </div>
+
+    </div>
+
+    <div class="content-box-background">
+      <div class="content-box-inside">
+
+        <div class="faq-body">
+          <div class="faq-question">
+            What is Beer Pong Plus?
+          </div>
+          <div class="faq-answer">
+            It’s an app that you open up when you’re playing your standard game of beer pong. BPP gives all the 
+            players special abilities which add a little variety and pizazz to the game we all know and love.
+          </div>
+          <div class="faq-question">
+            Is this for both Android and Iphone?
+          </div>
+          <div class="faq-answer">
+            Yup. Bottom o' da page.
+          </div>
+          <div class="faq-question">
+            Is there a physical version?
+          </div>
+          <div class="faq-answer">
+            Very soon! We’ll be kickstarting a physical version in the next few months, if you want to be notified 
+            when that happens, make sure you <%= link_to "have an account", new_user_registration_path %> with us. Trivia: BPP was actually 
+            originally created as a physical deck of cards, and we think that’s still the best possible way to play it!
+          </div>
+          <div class="faq-question">
+            Can I only use one power per game?
+          </div>
+          <div class="faq-answer">
+            That’s the way we designed it, but feel free to play it any way you want. Have some fun, drink some 
+            brews, and if you come up with a great new way to play, tell our <a href="http://www.reddit.com/r/beerpongplus">subreddit</a> about it!
+          </div>
+          <div class="faq-question">
+            When can I reveal a power?
+          </div>
+          <div class="faq-answer">
+            Anytime you want. Most powers are designed and balanced such that they can be revealed right after 
+            they activate. For example, you could make a bounce, and then reveal Sneaky Shooters, making that 
+            bounce worth 3 cups instead of 2. For some powers, like Buckshot (shoot two balls at the same time), 
+            you should really reveal them first, mostly so your opponents don’t think you’ve gone mad with power 
+            and started pelting them with balls out of spite.
+          </div>
+          <div class="faq-question">
+            What’s the difference between the free app and the paid app?
+          </div>
+          <div class="faq-answer">
+            With the paid app, you'll instantly have more than double the powers of the free app. The nag screen before every game is removed. Further, you get the ability to create custom cards and upload them to the site for the world to see and vote on! In the future, you'll be able to download the best community cards into your app. There's no reason to ever play the same game twice. 
+          </div>
+          <div class="faq-question">
+            You guys are awesome! This game is great!
+          </div>
+          <div class="faq-answer">
+            That’s not really a question, but thanks! If you want to send us fanmail, you can email <a href="mailto:contact@beerpongplus.com">contact@beerpongplus.com</a> . Better yet, tell someone who isn't us!
+          </div>
+          <div class="faq-question">
+            My question isn’t on the FAQ, but I want an answer!
+          </div>
+          <div class="faq-answer">
+            Again, not a question, but <%= link_to "here’s our contact info.", contact_welcome_index_path %>
+          </div>
+          <div class="faq-question">
+            Rebuttals are stupid, you're stupid for putting them in the game, and I hate you and you're stupid.
+          </div>
+          <div class="faq-answer">
+            Easy there, tiger. We know people can get pretty territorial about their beer pong rules. That's why our deck editor separates the powers according to what rule they pertain to. You can turn off every bounce or behind-the-back power with one click. In other words, no more excuses.
+          </div>
+          <div class="faq-question">
+            How does Curse work?
+          </div>
+          <div class="faq-answer">
+            You reveal Curse, and then point to a cup in your rack (the one that your opponents are shooting at). If 
+            your opponents make that cup, it is pulled as normal, but they pull one of their own cups. You may 
+            change which cup you are cursing any time before they start shooting for their turn. After a cursed cup 
+            is made, you can choose a new one. If both opponents’ make the curse cup in the same turn, they only 
+            pull two of their own, regardless of how many you have to pull.
+          </div>
+          <div class="faq-question">
+            What's your story? How did you guys make this game?
+          </div>
+          <div class="faq-answer">
+            We were drunk. It was a beautiful day in Isla Vista, CA. We had played a dozen games of Beer Pong, and we wanted something more. No one knows who suggested it first, but giving everyone Beer Pong superpowers sounded totally awesome. We had a blank deck of cards and a permanent marker and we started writing. It turns out drunkenly writing with a permanent marker makes cards totally illegible, so we started again. We played, laughed, and furiously tried to change the cards that were too weak, too powerful, or too confusing. After years of tweaks, the game was ready, and we were ready to give it to the world. We hope you have as much fun playing BP+ as we did making it and playtesting it. Especially the playtesting part, we really liked that. 
+          </div>
+
+          <div class="app-links-box">
+            <div class="free-app-buttons">
+              <div class="free-app-button-text">
+                <a>Beer Pong Plus </br>Free</a>
+              </div>
+              <div class="google-app-button">
+                <a href="http://play.google.com/store/apps/details?id=plus.pong.beer&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
+              </div>
+              <div class="apple-button">
+                <a href="https://itunes.apple.com/us/app/beer-pong-plus-free/id1066404137?ls=1&mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:135px;height:40px;"></a>
+              </div>
+            </div>
+            <div class="paid-app-buttons">
+              <div class="paid-app-button-text">
+                <a>Beer Pong Plus </br><strong>PLUS</strong></a>
+              </div>
+              <div class="google-app-button">
+                <a href="https://play.google.com/store/apps/details?id=plus.pong.beer.paid&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
+              </div>
+              <div class="apple-button">
+                <a href="https://itunes.apple.com/us/app/beer-pong-plus/id1066394906?ls=1&mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:135px;height:40px;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </html>
